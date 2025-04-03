@@ -1,0 +1,23 @@
+<!DOCTYPE EquiposNBA [
+    <!ELEMENT EquiposNBA (equipo*)>
+    <!ELEMENT equipo (nombre, titulos, posicion, quinteto)>
+    <!ATTLIST equipo conferencia CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT titulos (#PCDATA)>
+    <!ELEMENT posicion (#PCDATA)>
+    <!ELEMENT quinteto (#PCDATA)>
+]>
+<EquiposNBA>
+    <equipo conferencia="Este">
+        <nombre>Indiana Pacers</nombre>
+        <titulos>3</titulos>
+        <posicion>6</posicion>
+        <quinteto>Andrew Nembhard, Aaron Nesmith, Isaiah Jackson, Jalen Smith, T.J. McConnell</quinteto>
+    </equipo>
+    <equipo conferencia="Oeste">
+        <nombre>Utah Jazz</nombre>
+        <titulos>0</titulos>
+        <posicion>10</posicion>
+        <quinteto>Ochai Agbaji, Walker Kessler, Kris Dunn, Simone Fontecchio, Luka Samanic</quinteto>
+    </equipo>
+</EquiposNBA>
